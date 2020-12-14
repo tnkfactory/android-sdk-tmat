@@ -25,5 +25,5 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
     // Tnk tmat SDK
-    implementation 'com.tnkfactory.ad:tmat:7.01.3'
+    implementation 'com.tnkfactory.ad:tmat:7.02.3'
 }

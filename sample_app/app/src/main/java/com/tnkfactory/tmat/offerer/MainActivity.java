@@ -7,7 +7,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.tnkfactory.ad.TnkSession;
-
 import com.tnkfactory.ad.Logger;
 
 public class MainActivity extends AppCompatActivity {
