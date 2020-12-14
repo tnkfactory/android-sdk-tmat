@@ -10,7 +10,7 @@
      * [권한 설정](#권한-설정)
    * [Proguard 사용](#proguard-사용)
    
-2. [Analytics Report](#3-analytics-report)
+2. [Analytics Report](#2-analytics-report)
 
    * [필수 호출](#필수-호출)
      * [TnkSession.applicationStarted()](#tnksessionapplicationstarted)
