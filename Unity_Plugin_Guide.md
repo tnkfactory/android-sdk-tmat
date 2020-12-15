@@ -10,7 +10,6 @@
      * [Tnk App ID 설정](#tnk-app-id-설정)
      * [UnityPlayer](#unityplayer-설정)
 2. [Analytics Report](#2-analytics-report)
-   * [기본 설정](#기본-설정)
    * [필수 호출](#필수-호출)
      * [TnkSession.applicationStarted()](#tnkadplugin---applicationstarted)
    * [사용 활동 분석](#사용-활동-분석)
