@@ -27,13 +27,21 @@
 
 ### 라이브러리 등록
 
-아래의 코드를 App Module의 build.gradle 파일에 추가해주세요.
+TNK SDK는 Maven Central에 배포되어 있습니다.
 
-[![Download](https://api.bintray.com/packages/tnkfactory/android-sdk/tmat/images/download.svg)](https://bintray.com/tnkfactory/android-sdk/tmat/_latestVersion)
+최상위 Level(Project) 의 build.gradle 에 maven repository를 추가해주세요. 
+
+```gradle
+repositories {
+    mavenCentral()
+}
+```
+
+아래의 코드를 App Module의 build.gradle 파일에 추가해주세요.
 
 ```gradle
 dependencies {
-    implementation 'com.tnkfactory.ad:tmat:7.02.3'
+    implementation 'com.tnkfactory:tmat:7.03.3"
 }
 ```
 
