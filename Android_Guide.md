@@ -74,8 +74,8 @@ Tnk 사이트에서 앱 등록하면 상단에 App ID 가 나타납니다. 이�
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
-
 <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+<uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 ```
 
 ### Proguard 사용
