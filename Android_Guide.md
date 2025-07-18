@@ -29,19 +29,43 @@
 
 TNK SDK는 Maven Central에 배포되어 있습니다.
 
-최상위 Level(Project) 의 build.gradle 에 maven repository를 추가해주세요. 
+settings.gradle에 아래와 같이 mavenCentral()가 포함되어있는지 확인합니다.
+```gradle
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        
+        // 경로를 추가해 주시기 바랍니다.
+        maven { url "https://repository.tnkad.net:8443/repository/public/" }
+    }
+}
+rootProject.name = "project_name"
+include ':app'
+```
 
+만약 settings.gradle에 저 부분이 존재하지 않다면 최상위 Level(Project)의 build.gradle에 maven repository를 추가해주세요.
 ```gradle
 repositories {
     mavenCentral()
+    maven { url "https://repository.tnkad.net:8443/repository/public/" }
 }
 ```
+
 
 아래의 코드를 App Module의 build.gradle 파일에 추가해주세요.
 
 ```gradle
 dependencies {
-    implementation 'com.tnkfactory:tmat:7.03.3"
+    implementation 'com.tnkfactory:tmat:8.09.04"
 }
 ```
 
