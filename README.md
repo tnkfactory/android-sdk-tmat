@@ -1,4 +1,4 @@
-# Tnkfactory SDK Tmat
+# Tnk mobile app tracking SDK
 
 Tnk Tmat SDK는 아래의 기능들을 사용하실 수 있습니다.
 
@@ -12,6 +12,9 @@ Tnk Tmat SDK는 아래의 기능들을 사용하실 수 있습니다.
 
 ### Update Notice
 
+* 2025.07.18
+  * Android SDK v8.09.04 업데이트
+  * google play service 라이브러리 업데이트
 * 2021.04.15
   * Android SDK v7.03.3 업데이트
     * 배포 저장소 Maven Central 로 이전
