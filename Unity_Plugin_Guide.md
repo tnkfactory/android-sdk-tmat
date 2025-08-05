@@ -3,20 +3,27 @@
 ## 목차
 
 1. [Unity Settings](#1-unity-settings)
-   * [Plugin Download](#plugin-download)
-   * [Plugin Import](#plugin-import)
-   * [AdnroidMenifest.xml 설정](#adnroidmenifestxml-설정)
-     * [Permission 설정](#permission-설정)
-     * [Tnk App ID 설정](#tnk-app-id-설정)
-     * [UnityPlayer](#unityplayer-설정)
-2. [Analytics Report](#2-analytics-report)
-   * [필수 호출](#필수-호출)
-     * [TnkSession.applicationStarted()](#tnkadplugin---applicationstarted)
-   * [사용 활동 분석](#사용-활동-분석)
-     * [TnkSession.actionCompleted()](#tnkadplugin---actioncompleted)
-   * [구매 활동 분석](#구매-활동-분석)
-     * [TnkSession.buyCompleted()](#tnkadplugin---buycompleted)
-   * [사용자 정보 설정](#사용자-정보-설정)
+    * [Plugin Download](#plugin-download)
+    * [Plugin Import](#plugin-import)
+    * [gradleTemplate.properties 설정](#gradletemplateproperties-설정)
+    * [baseProjectTemplate.gradle 설정](#baseprojecttemplategradle-설정)
+    * [mainTemplate.gradle 설정](#maintemplategradle-설정)
+    * [AdnroidMenifest.xml 설정](#adnroidmenifestxml-설정)
+        * [Permission 설정](#permission-설정)
+        * [Tnk App ID 설정](#tnk-app-id-설정)
+        * [UnityPlayer](#unityplayer-설정)
+
+2. [Analytics Report](#4-analytics-report)
+
+    * [기본 설정](#기본-설정)
+    * [필수 호출](#필수-호출)
+        * [TnkSession.applicationStarted()](#tnkadplugin---applicationstarted)
+    * [사용 활동 분석](#사용-활동-분석)
+        * [TnkSession.actionCompleted()](#tnkadplugin---actioncompleted)
+    * [구매 활동 분석](#구매-활동-분석)
+        * [TnkSession.buyCompleted()](#tnkadplugin---buycompleted)
+    * [사용자 정보 설정](#사용자-정보-설정)
+
 
 ## 1. Unity Settings
 
@@ -24,23 +31,83 @@
 
 Tnk에서 제공하는 tnkad-rwd.unitypackage 파일을 다운 받습니다.
 
-**[[Unity Plugin Download v7.03.3](./sdk/tnkad-tmat.unitypackage)]**
+**[[Unity Plugin Download v8.04.11](./sdk/tnk_unity_plugin.zip)]**
 
-### Plugin Import
+적용 할 Unity 프로젝트를 연 상태에서 다음 이미지와 같이 프로젝트의 Packages폴더를 오른 클릭 후 폴더를 열어주세요
 
-적용할 Unity 프로젝트를 연 상태에서 다운로드 받은 tnkad-tmat.unitypackage 파일을 실행하면 아래와 같이 Plugin 파일들에 대한 import 창이 열립니다. 
+![unity_setting_5](./img/unity_setting_5.png)
 
-![Unity_01](./img/Unity_01.png)
+해당 폴더에 다운받은 tnk sdk파일을 복사합니다.
 
-모두 선택된 상태에서 [import] 버튼을 누르면 Plugin 파일들이 프로젝트로 import 됩니다.
+
+![unity_setting_6](./img/unity_setting_6.png)
+
+위 이미지와 같이 
+
+### Plugin Setting
+
+다음과 같이 안드로이드 빌드 설정 파일을 설정 해야합니다.
+
+1. 설정에서 build and setting 메뉴를 선택합니다.
+
+![unity_setting_1](./img/unity_setting_1.png)
+
+2. player settings 메뉴를 선택합니다.
+
+![unity_setting_2](./img/unity_setting_2.png)
+
+3. other settings 메뉴를 선택 후 min sdk와 target sdk를 설정합니다.
+(구글 정책 준수를 위해 2023년 11월 기준 target sdk 33이상으로 설정 하셔야 합니다. min sdk 권장은 21입니다.)
+
+![unity_setting_3](./img/unity_setting_3.png)
+
+4. publishing settings 메뉴를 선택 후 다음 이미지의 설정을 참고하여 설정합니다.
+
+![unity_setting_4](./img/unity_setting_4.png)
+
+
+
+설정 파일들을 열고 다음과 같은 설정을 추가해주세요.
+
+### gradleTemplate.properties 설정
+
+gradleTemplate.properties 파일에 AndroidX 설정을 추가해주세요.
+
+```gradle
+android.useAndroidX=true
+android.enableJetifier=true
+```
+
+![unity_config_1](./img/unity_config_1.png)
+
+### baseProjectTemplate.gradle 설정
+
+baseProjectTemplate.gradle 파일에 maven repository를 추가해주세요.
+
+```gradle
+repositories {
+    // tnk repository
+    maven { url "https://repository.tnkad.net:8443/repository/public/" }
+}
+```
+
+![unity_config_2](./img/unity_config_2.png)
+
+### mainTemplate.gradle 설정
+
+mainTemplate.gradle 파일에 TNK SDK 설정을 추가해주세요.
+
+```gradle
+dependencies {
+    api 'com.tnkfactory:rwd:8.04.11'
+}
+```
+
+![unity_config_3](./img/unity_config_3.png)
 
 ### AdnroidMenifest.xml 설정
 
-Plugin 내에는 TnkAdAndroidMenifest.xml 파일이 포함되어 있습니다. 이 파일의 내용을 참고하시어 AndroidMenifest.xml 파일을 직접 작성하시거나 또는 Android project로 export 하신 후 생성된 AndroidMenifest.xml 파일을 기초로 TnkAd Tmat SDK에서 필요로 하는 내용을 추가하시기 바랍니다.
-
-작성하신 AndroidMenifest.xml 파일은 Unity 프로젝트의 Plugins/Android 폴더 저장하시기 바랍니다.
-
-아래는 TnkAdAndroidMenifest.xml 파일의 내용입니다. 주석으로 되어 있는 부분의 설명을 확인하시고 본인의 AndroidMenifest.xml 파일에 반영해주세요.
+기존에 작성하신 AndroidMenifest.xml 파일에 아래 코드 중 주석으로 되어 있는 부분의 설명을 확인하시고 본인의 AndroidMenifest.xml 파일에 반영해주세요.
 
 > ##### TnkAdAndroidMenifest.xml
 
@@ -53,8 +120,6 @@ Plugin 내에는 TnkAdAndroidMenifest.xml 파일이 포함되어 있습니다. �
   android:versionName="1.0" 
   android:versionCode="1" 
   android:installLocation="preferExternal">
-
-  <uses-sdk android:minSdkVersion="16"/>
   
   <supports-screens 
     android:smallScreens="true" 
@@ -64,8 +129,10 @@ Plugin 내에는 TnkAdAndroidMenifest.xml 파일이 포함되어 있습니다. �
     android:anyDensity="true" />
   
   <!-- permissions for TnkAd -->
-  <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+   <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+   <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+   <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
   
   <application 
     android:icon="@drawable/app_icon" 
@@ -76,7 +143,7 @@ Plugin 내에는 TnkAdAndroidMenifest.xml 파일이 포함되어 있습니다. �
       android:screenOrientation="portrait" 
       android:launchMode="singleTask" 
       android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" 
-      android:name="com.unity3d.player.UnityPlayerNativeActivity">
+      android:name="com.unity3d.player.UnityPlayerNativeActivity" android:exported="true">
 
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -87,9 +154,14 @@ Plugin 내에는 TnkAdAndroidMenifest.xml 파일이 포함되어 있습니다. �
       <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" /> <!-- set true -->
     </activity>
     
+    <!-- TnkAd  Offerwall Activities -->
+     <activity android:name="com.tnkfactory.ad.AdWallActivity"
+             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+             android:exported="true"
+             android:screenOrientation="portrait"/>
+    
     <!-- Set your Tnk App_ID here -->
     <meta-data android:name="tnkad_app_id" android:value="your-appid-from-tnk-site" />
-    <meta-data android:name="tnkad_tracking" android:value="true" />
   </application>
   
   <uses-feature android:glEsVersion="0x00020000" />
@@ -97,33 +169,44 @@ Plugin 내에는 TnkAdAndroidMenifest.xml 파일이 포함되어 있습니다. �
 </manifest>
 ```
 
+![unity_config_4](./img/unity_config_4.png)
+
 #### Permission 설정
 
 TnkAd SDK 가 필요로 하는 permission을 아래와 같이 설정합니다.
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
-```
-
-앱의 유입 경로 기능을 사용하기 위해서는 BIND_GET_INSTALL_REFERRER_SERVICE 권한은 필수입니다.
-
-```xml
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+<uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 ```
 
 #### Tnk App ID 설정
 
-Tnk 사이트에서 앱 등록하면 상단에 App ID 가 나타납니다. 이를 AndroidMenifest.xml 파일의 <application> tag 안에 아래와 같이 설정합니다. 
+Tnk 사이트에서 앱 등록하면 상단에 App ID 가 나타납니다. 이를 AndroidMenifest.xml 파일의 <application> tag 안에 아래와 같이 설정합니다.
 
 (*your-application-id-from-tnk-site* 부분을 실제 App ID 값으로 변경하세요.)
 
 ```xml
 <application>
-    ...
-    <meta-data android:name="tnkad_app_id"  android:value="your-app-id-from-tnk-sites" />
-    <meta-data android:name="tnkad_tracking" android:value="true" />
-    ...
+
+     ...
+
+    <meta-data android:name="tnkad_app_id" android:value="your-application-id-from-tnk-site" />
+
 </application>
+```
+
+#### Offerwall Activity 설정
+
+Offerwall Activity는 보상형 광고목록이 출력되는 Activity입니다. 매체앱으로서 충전소 기능을 탑제하시려면 아래의 <activity/> 설정을 추가하셔야합니다.
+
+```xml
+<activity android:name="com.tnkfactory.ad.AdWallActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:exported="true"
+        android:screenOrientation="portrait"/>
 ```
 
 #### UnityPlayer 설정
@@ -136,7 +219,7 @@ Unity 4.3 이상 버전을 사용하신다면 아래와 같이 ForwardNativeEven
   android:screenOrientation="portrait" 
   android:launchMode="singleTask" 
   android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" 
-  android:name="com.tnkfactory.spaceshootler.UnityPlayerNativeActivity">
+  android:name="com.tnkfactory.spaceshootler.UnityPlayerNativeActivity" android:exported="true">
 
   <intent-filter>
     <action android:name="android.intent.action.MAIN" />
@@ -148,11 +231,77 @@ Unity 4.3 이상 버전을 사용하신다면 아래와 같이 ForwardNativeEven
 </activity>
 ```
 
+### proguard 설정
+
+proguard-user.txt 파일에 아래 코드를 추가해주세요.
+
+```proguard
+// tnk SDK
+-keep class com.tnkfactory.** { *;}
+```
+
+![unity_config_5](./img/unity_config_5.png)
+
+
 ## 2. Analytics Report
 
 Analytics 적용을 위해서는 Tnk 사이트에서 앱 등록 및 프로젝트 상의 SDK 관련 설정이 우선 선행되어야합니다.
 
 [[Unity Settings](#1-unity-settings)]의 내용을 우선 확인해주세요.
+
+### 기본 설정
+
+AndroidMenifest.xml 파일 내에 Tnk 앱 등록세 발급 받은 App ID를 설정하시고 그 아래에 아래와 같이 tnkad_tracking 값을 true로 설정합니다.
+
+이후 더 이상 tracking을 원하지 않을 경우에는 false로 설정하시기 바랍니다.
+
+```xml
+<application>
+    ...
+    <meta-data android:name="tnkad_app_id"  android:value="your-app-id-from-tnk-sites" />
+    <meta-data android:name="tnkad_tracking" android:value="true" />
+    ...
+</application>
+```
+
+SDK가 요구하는 permission들을 추가합니다.
+
+\- 앱의 유입 경로 기능을 사용하기 위해서는 BIND_GET_INSTALL_REFERRER_SERVICE 권한은 필수입니다.
+
+```xml
+<application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+</application>
+```
+
+전체적인 AndroidMenifest 파일의 모습은 아래와 같습니다.
+
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="your.package.name" >
+
+    <uses-permission android:name="android.permission.INTERNET" /> 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+   
+
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name"> 
+
+        ... your activities ...
+
+ 
+
+        <meta-data android:name="tnkad_app_id" android:value="your-app-id-from-tnk-sites" />
+
+        <meta-data android:name="tnkad_tracking" android:value="true" />    
+
+    </application>
+
+</manifest> 
+```
 
 ### 필수 호출
 
@@ -216,7 +365,7 @@ TnkAd.Plugin.Instance.actionCompleted("friend_invite");
 
 ### 구매 활동 분석
 
-사용자가 유료 구매 등의 활동을 하는 경우 이에 대한 분석데이터를 얻고자 할 경우에는 아래의 API를 사용합니다. 
+사용자가 유료 구매 등의 활동을 하는 경우 이에 대한 분석데이터를 얻고자 할 경우에는 아래의 API를 사용합니다.
 
 구매활동 분석 API 적용시에는 유입경로별로 구매횟수와 구매 사용자 수 파악이 가능하며, 하루 사용자 중에서 몇명의 유저가 구매 활동을 하였는 지 또 사용자가 앱을 처음 실행한 후 얼마정도가 지나야 구매활동을 하는지 등의 데이터 분석이 가능합니다. 분석 보고서에서 제공하는 데이터에 각 아이템별 가격을 대입시키면 ARPU 및 ARPPU 값도 산출하실 수 있습니다.
 
@@ -260,4 +409,3 @@ TnkAd.Plugin.Instance.setUserGender(0);
 // 성별 설정 (여) 
 TnkAd.Plugin.Instance.setUserGender(1); 
 ```
-
