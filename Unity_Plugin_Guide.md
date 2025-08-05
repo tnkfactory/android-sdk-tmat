@@ -13,7 +13,7 @@
         * [Tnk App ID 설정](#tnk-app-id-설정)
         * [UnityPlayer](#unityplayer-설정)
 
-2. [Analytics Report](#4-analytics-report)
+2. [Analytics Report](#2-analytics-report)
 
     * [기본 설정](#기본-설정)
     * [필수 호출](#필수-호출)
@@ -109,67 +109,7 @@ dependencies {
 
 기존에 작성하신 AndroidMenifest.xml 파일에 아래 코드 중 주석으로 되어 있는 부분의 설명을 확인하시고 본인의 AndroidMenifest.xml 파일에 반영해주세요.
 
-> ##### TnkAdAndroidMenifest.xml
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<manifest 
-  xmlns:android="http://schemas.android.com/apk/res/android" 
-  package="your.package.name" 
-  android:theme="@android:style/Theme.NoTitleBar" 
-  android:versionName="1.0" 
-  android:versionCode="1" 
-  android:installLocation="preferExternal">
-  
-  <supports-screens 
-    android:smallScreens="true" 
-    android:normalScreens="true" 
-    android:largeScreens="true" 
-    android:xlargeScreens="true" 
-    android:anyDensity="true" />
-  
-  <!-- permissions for TnkAd -->
-   <uses-permission android:name="android.permission.INTERNET" />
-   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-   <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
-   <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
-  
-  <application 
-    android:icon="@drawable/app_icon" 
-    android:label="@string/app_name">
-
-    <activity 
-      android:label="@string/app_name" 
-      android:screenOrientation="portrait" 
-      android:launchMode="singleTask" 
-      android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" 
-      android:name="com.unity3d.player.UnityPlayerNativeActivity" android:exported="true">
-
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-
-      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
-      <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" /> <!-- set true -->
-    </activity>
-    
-    <!-- TnkAd  Offerwall Activities -->
-     <activity android:name="com.tnkfactory.ad.AdWallActivity"
-             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-             android:exported="true"
-             android:screenOrientation="portrait"/>
-    
-    <!-- Set your Tnk App_ID here -->
-    <meta-data android:name="tnkad_app_id" android:value="your-appid-from-tnk-site" />
-  </application>
-  
-  <uses-feature android:glEsVersion="0x00020000" />
-  <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
-</manifest>
-```
-
-![unity_config_4](./img/unity_config_4.png)
 
 #### Permission 설정
 
@@ -184,76 +124,9 @@ TnkAd SDK 가 필요로 하는 permission을 아래와 같이 설정합니다.
 
 #### Tnk App ID 설정
 
-Tnk 사이트에서 앱 등록하면 상단에 App ID 가 나타납니다. 이를 AndroidMenifest.xml 파일의 <application> tag 안에 아래와 같이 설정합니다.
+AndroidMenifest.xml 파일 내에 Tnk 앱 등록시 발급 받은 App ID를 설정하시고 그 아래에 아래와 같이 tnkad_tracking 값을 true로 설정합니다.
 
 (*your-application-id-from-tnk-site* 부분을 실제 App ID 값으로 변경하세요.)
-
-```xml
-<application>
-
-     ...
-
-    <meta-data android:name="tnkad_app_id" android:value="your-application-id-from-tnk-site" />
-
-</application>
-```
-
-#### Offerwall Activity 설정
-
-Offerwall Activity는 보상형 광고목록이 출력되는 Activity입니다. 매체앱으로서 충전소 기능을 탑제하시려면 아래의 <activity/> 설정을 추가하셔야합니다.
-
-```xml
-<activity android:name="com.tnkfactory.ad.AdWallActivity"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-        android:exported="true"
-        android:screenOrientation="portrait"/>
-```
-
-#### UnityPlayer 설정
-
-Unity 4.3 이상 버전을 사용하신다면 아래와 같이 ForwardNativeEventsToDalvik 옵션을 true로 설정하셔야 화면에 touch 이벤트가 동작합니다. 매체앱으로서 전면 중간광고 창을 띄우고자 하신다면 반드시 아래와 같이 설정해주세요. 광고만 진행하시는 경우에는 설정하실 필요가 없습니다.
-
-```xml
-<activity 
-  android:label="@string/app_name" 
-  android:screenOrientation="portrait" 
-  android:launchMode="singleTask" 
-  android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" 
-  android:name="com.tnkfactory.spaceshootler.UnityPlayerNativeActivity" android:exported="true">
-
-  <intent-filter>
-    <action android:name="android.intent.action.MAIN" />
-    <category android:name="android.intent.category.LAUNCHER" />
-  </intent-filter>
-
-  <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
-  <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" /> <!-- set true -->
-</activity>
-```
-
-### proguard 설정
-
-proguard-user.txt 파일에 아래 코드를 추가해주세요.
-
-```proguard
-// tnk SDK
--keep class com.tnkfactory.** { *;}
-```
-
-![unity_config_5](./img/unity_config_5.png)
-
-
-## 2. Analytics Report
-
-Analytics 적용을 위해서는 Tnk 사이트에서 앱 등록 및 프로젝트 상의 SDK 관련 설정이 우선 선행되어야합니다.
-
-[[Unity Settings](#1-unity-settings)]의 내용을 우선 확인해주세요.
-
-### 기본 설정
-
-AndroidMenifest.xml 파일 내에 Tnk 앱 등록세 발급 받은 App ID를 설정하시고 그 아래에 아래와 같이 tnkad_tracking 값을 true로 설정합니다.
-
-이후 더 이상 tracking을 원하지 않을 경우에는 false로 설정하시기 바랍니다.
 
 ```xml
 <application>
@@ -275,6 +148,8 @@ SDK가 요구하는 permission들을 추가합니다.
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 </application>
 ```
 
@@ -286,7 +161,7 @@ SDK가 요구하는 permission들을 추가합니다.
     <uses-permission android:name="android.permission.INTERNET" /> 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-   
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 
     <application android:icon="@drawable/ic_launcher" android:label="@string/app_name"> 
 
@@ -302,6 +177,28 @@ SDK가 요구하는 permission들을 추가합니다.
 
 </manifest> 
 ```
+
+
+![unity_config_4](./img/unity_config_4.png)
+
+
+### proguard 설정
+
+proguard-user.txt 파일에 아래 코드를 추가해주세요.
+
+```proguard
+// tnk SDK
+-keep class com.tnkfactory.** { *;}
+```
+
+![unity_config_5](./img/unity_config_5.png)
+
+
+## 2. Analytics Report
+
+Analytics 적용을 위해서는 Tnk 사이트에서 앱 등록 및 프로젝트 상의 SDK 관련 설정이 우선 선행되어야합니다.
+
+[[Unity Settings](#1-unity-settings)]의 내용을 우선 확인해주세요.
 
 ### 필수 호출
 
