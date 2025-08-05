@@ -31,7 +31,7 @@
 
 Tnk에서 제공하는 tnkad-rwd.unitypackage 파일을 다운 받습니다.
 
-**[[Unity Plugin Download v8.04.11](./sdk/tnk_unity_plugin.zip)]**
+**[[Unity Plugin Download v8.04.11](https://github.com/tnkfactory/tnk_sdk_rwd_br/blob/main/sdk/tnk_unity_plugin.zip)]**
 
 적용 할 Unity 프로젝트를 연 상태에서 다음 이미지와 같이 프로젝트의 Packages폴더를 오른 클릭 후 폴더를 열어주세요
 
