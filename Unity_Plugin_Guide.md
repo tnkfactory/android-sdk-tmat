@@ -153,6 +153,8 @@ SDK가 요구하는 permission들을 추가합니다.
 </application>
 ```
 
+권한과 appid, tracking설정 세가지를 모두 추가 하셔야 합니다.
+
 전체적인 AndroidMenifest 파일의 모습은 아래와 같습니다.
 
 ```xml
@@ -178,6 +180,7 @@ SDK가 요구하는 permission들을 추가합니다.
 </manifest> 
 ```
 
+스크린샷 예시)
 
 ![unity_config_4](./img/unity_config_4.png)
 
