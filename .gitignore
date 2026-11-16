@@ -1,0 +1,7 @@
+
+# iOS
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.idea/
+.DS_Store

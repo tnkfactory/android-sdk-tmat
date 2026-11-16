@@ -1,0 +1,1156 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TnkTmatSdk",
+    "printedName": "TnkTmatSdk",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "zlib",
+        "printedName": "zlib",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TnkTmatSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TnkSession",
+        "printedName": "TnkSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initInstance",
+            "printedName": "initInstance(appId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TnkSession",
+                "printedName": "TnkTmatSdk.TnkSession",
+                "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(cm)initInstanceWithAppId:",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC12initInstance5appIdACSS_tFZ",
+            "moduleName": "TnkTmatSdk",
+            "static": true,
+            "objc_name": "initInstanceWithAppId:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TnkTmatSdk.TnkSession?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TnkSession",
+                    "printedName": "TnkTmatSdk.TnkSession",
+                    "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(cm)sharedInstance",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC14sharedInstanceACSgyFZ",
+            "moduleName": "TnkTmatSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableLogging",
+            "printedName": "enableLogging(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(cm)enableLogging:",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC13enableLoggingyySbFZ",
+            "moduleName": "TnkTmatSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(cpy)sdkVersion",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC10sdkVersionSSvpZ",
+            "moduleName": "TnkTmatSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(cm)sdkVersion",
+                "mangledName": "$s10TnkTmatSdk0A7SessionC10sdkVersionSSvgZ",
+                "moduleName": "TnkTmatSdk",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "applicationStarted",
+            "printedName": "applicationStarted()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(im)applicationStarted",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC18applicationStartedyyF",
+            "moduleName": "TnkTmatSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "actionCompleted",
+            "printedName": "actionCompleted(actionName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(im)actionCompletedWithActionName:",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC15actionCompleted0E4NameySS_tF",
+            "moduleName": "TnkTmatSdk",
+            "objc_name": "actionCompletedWithActionName:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "buyCompleted",
+            "printedName": "buyCompleted(itemName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(im)buyCompletedWithItemName:",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC12buyCompleted8itemNameySS_tF",
+            "moduleName": "TnkTmatSdk",
+            "objc_name": "buyCompletedWithItemName:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserName",
+            "printedName": "setUserName(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(im)setUserName:",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC11setUserNameyySSSgF",
+            "moduleName": "TnkTmatSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserName",
+            "printedName": "getUserName()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(im)getUserName",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC11getUserNameSSSgyF",
+            "moduleName": "TnkTmatSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTrackingEnabled",
+            "printedName": "setTrackingEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(im)setTrackingEnabled:",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC18setTrackingEnabledyySbF",
+            "moduleName": "TnkTmatSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCOPPA",
+            "printedName": "setCOPPA(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(im)setCOPPA:",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC8setCOPPAyySbF",
+            "moduleName": "TnkTmatSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setGdprConsent",
+            "printedName": "setGdprConsent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(im)setGdprConsent:",
+            "mangledName": "$s10TnkTmatSdk0A7SessionC14setGdprConsentyySbF",
+            "moduleName": "TnkTmatSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TnkSession",
+                "printedName": "TnkTmatSdk.TnkSession",
+                "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession(im)init",
+            "mangledName": "$s10TnkTmatSdk0A7SessionCACycfc",
+            "moduleName": "TnkTmatSdk",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TnkTmatSdk@objc(cs)TnkTmatSession",
+        "mangledName": "$s10TnkTmatSdk0A7SessionC",
+        "moduleName": "TnkTmatSdk",
+        "objc_name": "TnkTmatSession",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Archiver.swift",
+      "kind": "IntegerLiteral",
+      "offset": 966,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Archiver.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1003,
+      "length": 9,
+      "value": "268435455"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Archiver.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1056,
+      "length": 10,
+      "value": "-268435456"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Archiver.swift",
+      "kind": "Dictionary",
+      "offset": 1127,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Archiver.swift",
+      "kind": "Dictionary",
+      "offset": 1324,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Archiver.swift",
+      "kind": "Array",
+      "offset": 1370,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 196,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 207,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 236,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 3,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 323,
+      "length": 6,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 352,
+      "length": 6,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 381,
+      "length": 4,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 410,
+      "length": 4,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 439,
+      "length": 12,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 468,
+      "length": 6,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 497,
+      "length": 5,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 533,
+      "length": 10,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 562,
+      "length": 9,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 591,
+      "length": 10,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 620,
+      "length": 12,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Unarchiver.swift",
+      "kind": "Array",
+      "offset": 285,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Unarchiver.swift",
+      "kind": "Array",
+      "offset": 327,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/Amf3Unarchiver.swift",
+      "kind": "Array",
+      "offset": 376,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/DataCompressor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 478,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/DataCompressor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 511,
+      "length": 5,
+      "value": "16384"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/ValueObject.swift",
+      "kind": "Array",
+      "offset": 283,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/ValueObject.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1583,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/ValueObject.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2174,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/ValueObject.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2303,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/ValueObject.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2912,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/ValueObject.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3045,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/ValueObject.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3648,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/amf\/ValueObjectAssembler.swift",
+      "kind": "Dictionary",
+      "offset": 277,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 357,
+      "length": 7,
+      "value": "\"AdApi\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 400,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "Dictionary",
+      "offset": 445,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "Array",
+      "offset": 478,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1917,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 2782,
+      "length": 3,
+      "value": "\"p\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 2810,
+      "length": 3,
+      "value": "\"t\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 2838,
+      "length": 3,
+      "value": "\"m\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 2866,
+      "length": 3,
+      "value": "\"a\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 2893,
+      "length": 3,
+      "value": "\"f\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 2934,
+      "length": 3,
+      "value": "\"v\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 2967,
+      "length": 3,
+      "value": "\"k\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 2996,
+      "length": 3,
+      "value": "\"s\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 3035,
+      "length": 3,
+      "value": "\"n\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/InvocationPacket.swift",
+      "kind": "StringLiteral",
+      "offset": 3078,
+      "length": 3,
+      "value": "\"u\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/SessionInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 362,
+      "length": 7,
+      "value": "\"AdApi\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/SessionInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 545,
+      "length": 3,
+      "value": "\"I\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/SessionInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 596,
+      "length": 3,
+      "value": "\"I\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/SessionInfo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 761,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/SessionInfo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 787,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/api\/SessionInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 825,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 168,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/Constants.swift",
+      "kind": "BooleanLiteral",
+      "offset": 258,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 427,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 472,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 566,
+      "length": 8,
+      "value": "\"ret_cd\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/Constants.swift",
+      "kind": "Array",
+      "offset": 806,
+      "length": 12,
+      "value": "[0, 2, 4, 9]"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 848,
+      "length": 34,
+      "value": "\"00000000000000000000000000000000\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/TmatLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 288,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/TmatPreference.swift",
+      "kind": "StringLiteral",
+      "offset": 290,
+      "length": 10,
+      "value": "\"tnktmat_\""
+    },
+    {
+      "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/TnkSession.swift",
+      "kind": "StringLiteral",
+      "offset": 1094,
+      "length": 27,
+      "value": "\"com.tnkfactory.tmat.queue\""
+    }
+  ]
+}

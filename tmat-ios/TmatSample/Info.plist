@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>ko</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>UILaunchStoryboardName</key>
+	<string></string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+
+	<!-- Tnk App ID: Tnk 사이트 앱 정보의 APP ID 로 바꾸세요 -->
+	<key>tnkad_app_id</key>
+	<string>30408070-4051-9322-2239-15040708030f</string>
+	<!-- 재방문 등 사용 활동 수집 여부 -->
+	<key>tnkad_tracking</key>
+	<true/>
+
+	<!-- 앱 추적 투명성(ATT) 동의 팝업 문구 -->
+	<key>NSUserTrackingUsageDescription</key>
+	<string>광고 참여 확인을 위해 광고 식별자를 사용합니다.</string>
+</dict>
+</plist>

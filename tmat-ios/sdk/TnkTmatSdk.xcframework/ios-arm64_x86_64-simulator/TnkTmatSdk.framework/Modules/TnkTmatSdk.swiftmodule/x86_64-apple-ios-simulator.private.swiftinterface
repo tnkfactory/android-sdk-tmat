@@ -1,0 +1,31 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.4.2 effective-5.10 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TnkTmatSdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4.2
+import AdSupport
+import CoreTelephony
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import zlib
+@_hasMissingDesignatedInitializers @objc(TnkTmatSession) final public class TnkSession : ObjectiveC::NSObject {
+  @discardableResult
+  @objc public static func initInstance(appId: Swift::String) -> TnkTmatSdk::TnkSession
+  @objc public static func sharedInstance() -> TnkTmatSdk::TnkSession?
+  @objc public static func enableLogging(_ enabled: Swift::Bool)
+  @objc public static var sdkVersion: Swift::String {
+    @objc get
+  }
+  @objc final public func applicationStarted()
+  @objc final public func actionCompleted(actionName: Swift::String)
+  @objc final public func buyCompleted(itemName: Swift::String)
+  @objc final public func setUserName(_ userName: Swift::String?)
+  @objc final public func getUserName() -> Swift::String?
+  @objc final public func setTrackingEnabled(_ enabled: Swift::Bool)
+  @objc final public func setCOPPA(_ coppa: Swift::Bool)
+  @objc final public func setGdprConsent(_ consent: Swift::Bool)
+  @objc deinit
+}

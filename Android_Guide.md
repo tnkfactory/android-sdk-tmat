@@ -8,6 +8,7 @@ Tnk Tmat SDK 는 광고주 앱에 탑재하여 **앱 실행**, **사용자 액�
 | 최신 버전 | **8.09.05** (2026.11.16) |
 | 최소 Android | API 21 (Android 5.0) |
 | 저장소 | `https://repository.tnkad.net/repository/public/` |
+| 샘플 프로젝트 | [`tmat-android/`](./tmat-android) |
 
 ## 목차
 
