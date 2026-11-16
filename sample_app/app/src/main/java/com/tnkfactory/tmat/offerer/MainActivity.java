@@ -7,7 +7,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.tnkfactory.ad.TnkSession;
-import com.tnkfactory.ad.Logger;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,12 +15,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Logger.enableLogging(true);
+        // 연동 확인용 로그(Logcat 태그 TNK_AD). 출시 빌드에서는 끄세요.
+        TnkSession.enableLogging(true);
 
         // 유저 식별 값 설정
         TnkSession.setUserName(MainActivity.this, "Test_User");
 
-        // 실행형 광고
+        // 앱 실행 알림 — 첫 화면 onCreate() 에서 다른 API 보다 먼저 호출
         TnkSession.applicationStarted(this);
 
         Button btn_action_completed_01 = findViewById(R.id.btn_action_completed_01);

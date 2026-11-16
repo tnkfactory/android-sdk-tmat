@@ -20,5 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
-# Tnk Proguard Setting
--keep class com.tnkfactory.** { *;}
+# Tnk SDK 8.09.05 부터 Tnk 관련 규칙은 필요 없다(SDK AAR 에 포함되어 자동 적용).
