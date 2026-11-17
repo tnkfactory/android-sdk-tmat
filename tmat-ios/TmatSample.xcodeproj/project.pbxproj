@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		79011BB264CA3B62B2366D16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E56EE068EF4BBFE74CC3C /* ViewController.swift */; };
+		82BF40DB248A6E33CB31361A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D1FE559A6455858BE8ED8F /* SceneDelegate.swift */; };
 		BD6CAB6DAFECBEBE996AEC7E /* TnkTmatSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235E9547857D28745AB9B096 /* TnkTmatSdk.xcframework */; };
 		D3049ED96886C1DA4096917E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81506044D13F34BDBC43861D /* AppDelegate.swift */; };
 		FD1D6E270867ADF2013CDDDE /* TnkTmatSdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 235E9547857D28745AB9B096 /* TnkTmatSdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		235E9547857D28745AB9B096 /* TnkTmatSdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TnkTmatSdk.xcframework; path = sdk/TnkTmatSdk.xcframework; sourceTree = "<group>"; };
+		38D1FE559A6455858BE8ED8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		506E9844A7952D20EE862329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		81506044D13F34BDBC43861D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1B54E430115481035067979 /* TmatSample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TmatSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 			children = (
 				81506044D13F34BDBC43861D /* AppDelegate.swift */,
 				506E9844A7952D20EE862329 /* Info.plist */,
+				38D1FE559A6455858BE8ED8F /* SceneDelegate.swift */,
 				CC3E56EE068EF4BBFE74CC3C /* ViewController.swift */,
 			);
 			path = TmatSample;
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3049ED96886C1DA4096917E /* AppDelegate.swift in Sources */,
+				82BF40DB248A6E33CB31361A /* SceneDelegate.swift in Sources */,
 				79011BB264CA3B62B2366D16 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,7 @@ Tnk Tmat SDK 는 광고주 앱에 탑재하여 **앱 실행**, **사용자 액�
 
 | 항목 | 내용 |
 |------|------|
-| 최신 버전 | **1.0.0** (2026.11.16) |
+| 최신 버전 | **6.0.0** (2026.11.17) |
 | 최소 iOS | 15.0 |
 | 언어 | Swift · Objective-C |
 | 샘플 프로젝트 | [`tmat-ios/`](./tmat-ios) |
@@ -30,7 +30,7 @@ Tnk Tmat SDK 는 광고주 앱에 탑재하여 **앱 실행**, **사용자 액�
 
 ### 라이브러리 다운로드
 
-**[[iOS Tmat SDK Download v1.0.0](./tmat-ios/sdk/TnkTmatSdk.v1.0.0.zip)]**
+**[[iOS Tmat SDK Download v6.0.0](./tmat-ios/sdk/TnkTmatSdk.v6.0.0.zip)]**
 
 ### 라이브러리 등록
 
@@ -198,7 +198,7 @@ Objective-C 에서는 클래스 이름이 **`TnkTmatSession`** 입니다.
 
    | 로그 | 뜻 |
    |------|----|
-   | `sdk version : 1.0.0` | SDK 가 초기화되었습니다 |
+   | `sdk version : 6.0.0` | SDK 가 초기화되었습니다 |
    | `request for payment returned. return code = …` | 서버가 응답했습니다 |
    | `… 보류: 광고 ID(IDFA)가 없습니다 …` | 추적이 허용되지 않아 전송하지 않았습니다 |
    | `RPFS …` / `RPFA …` | 실행(RPFS)·액션(RPFA) 전송 중 오류입니다. 로그와 함께 Tnk 담당자에게 알려 주세요 |

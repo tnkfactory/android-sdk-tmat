@@ -7,7 +7,7 @@ Tnk Tmat SDK는 아래의 기능들을 사용하실 수 있습니다.
 | 플랫폼 | 가이드 | 샘플 프로젝트 | 최신 버전 |
 |--------|--------|---------------|-----------|
 | Android | [Android 가이드](./Android_Guide.md) | [`tmat-android/`](./tmat-android) | 8.09.05 |
-| iOS | [iOS 가이드](./iOS_Guide.md) | [`tmat-ios/`](./tmat-ios) | 1.0.0 |
+| iOS | [iOS 가이드](./iOS_Guide.md) | [`tmat-ios/`](./tmat-ios) | 6.0.0 |
 | Unity (Android) | [Unity 플러그인 가이드](./Unity_Plugin_Guide.md) | — | 7.03.3 |
 
 ## Android
@@ -18,7 +18,7 @@ Tnk Tmat SDK는 아래의 기능들을 사용하실 수 있습니다.
 
 ### Update Notice
 
-* 2026.11.16
+* 2026.11.17
   * Android SDK v8.09.05 업데이트
     * 앱 ProGuard/R8 설정에 Tnk 규칙(`-keep class com.tnkfactory.** { *;}`)이 더 이상 필요 없음 — SDK 에 포함되어 자동 적용
     * 빌드 환경 업데이트 (AGP 9.1.1)
@@ -37,12 +37,12 @@ Tnk Tmat SDK는 아래의 기능들을 사용하실 수 있습니다.
 
 ### iOS Guide
 
-[iOS 가이드 문서](./iOS_Guide.md) · 샘플: [`tmat-ios/`](./tmat-ios) · SDK 다운로드: [TnkTmatSdk v1.0.0](./tmat-ios/sdk/TnkTmatSdk.v1.0.0.zip)
+[iOS 가이드 문서](./iOS_Guide.md) · 샘플: [`tmat-ios/`](./tmat-ios) · SDK 다운로드: [TnkTmatSdk v6.0.0](./tmat-ios/sdk/TnkTmatSdk.v6.0.0.zip)
 
 ### Update Notice
 
-* 2026.11.16
-  * iOS SDK v1.0.0 최초 배포
+* 2026.11.17
+  * iOS SDK v6.0.0 최초 배포
     * `applicationStarted()` · `actionCompleted(actionName:)` · `buyCompleted(itemName:)` (Android 와 같은 동작)
     * 최소 iOS 15.0, Swift · Objective-C(`TnkTmatSession`) 지원
 

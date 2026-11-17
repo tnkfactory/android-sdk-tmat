@@ -10,11 +10,11 @@
 		</data>
 		<key>ios-arm64/TnkTmatSdk.framework/Info.plist</key>
 		<data>
-		7VV6mCR5puovyreg79EHsiyMLgM=
+		e/lIF+Uo8mXVY9LPmqQvXnplg98=
 		</data>
 		<key>ios-arm64/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		LHZjKsU5lxs7G8liVRbMc2zStyM=
+		Wpbt+uR0UQTMQk74xVRhjAmbpyI=
 		</data>
 		<key>ios-arm64/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>ios-arm64/TnkTmatSdk.framework/TnkTmatSdk</key>
 		<data>
-		TTjBkhqSWnQQGOP0WWBN7qbhWZg=
+		oH1N1Wt7Aw52s5mdczAAF/BIUws=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Headers/TnkTmatSdk-Swift.h</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Info.plist</key>
 		<data>
-		14UgLsJVr4MwP/4N8IbCC9ffbxg=
+		tQyDYN7ZFqQHWr0rm+ZM6oRrij0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		LHZjKsU5lxs7G8liVRbMc2zStyM=
+		Wpbt+uR0UQTMQk74xVRhjAmbpyI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		LHZjKsU5lxs7G8liVRbMc2zStyM=
+		Wpbt+uR0UQTMQk74xVRhjAmbpyI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/TnkTmatSdk</key>
 		<data>
-		NhHmFNaeo2ks2/MvxY4WBC80Vw0=
+		mv7GD43AoL+d6V6IeqoGBavAf2Q=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -106,14 +106,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3AiTgS4ViyDbXL0TPYL7++EYNf8c3J41K+Z2GOfTzo=
+			4WISGaQR9OtvZbKeu84/jNxAwGDIQXc2jAOTGSgWu/w=
 			</data>
 		</dict>
 		<key>ios-arm64/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			byggEs/BbQTJt1L8PlTr3wiyZBJyxpHD+oVbBxn0M0g=
+			pVtPXSJAMjA95d6//j7C9sfSVVSy2MVrebyvsoXCOY8=
 			</data>
 		</dict>
 		<key>ios-arm64/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HWXX84feoPbiXpXO6GPkwkf7WTEBnqvdF1Mbtfkz47c=
+			SyWdvJrvhHdg0Vhaz+3u8grvzRI3Q2W63+IRttbwWiE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Headers/TnkTmatSdk-Swift.h</key>
@@ -169,14 +169,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CY30uYuhKCy2rctMszeR6XseKZA9FwLOeEMqLMYTeYw=
+			GtuO52HhcsNXAOVc1PGaeNP2LtY8Rb/aROHco1TLyvk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			byggEs/BbQTJt1L8PlTr3wiyZBJyxpHD+oVbBxn0M0g=
+			pVtPXSJAMjA95d6//j7C9sfSVVSy2MVrebyvsoXCOY8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -204,7 +204,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			byggEs/BbQTJt1L8PlTr3wiyZBJyxpHD+oVbBxn0M0g=
+			pVtPXSJAMjA95d6//j7C9sfSVVSy2MVrebyvsoXCOY8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TnkTmatSdk.framework/Modules/TnkTmatSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -246,7 +246,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQLtSAHckfQ++yckbEzJnQBsz0OephXDbHV3wmFOqmU=
+			JNYs5Vo3DIDZ1Is+/0dvaZDimDpibiCwGJGaOky9xWo=
 			</data>
 		</dict>
 	</dict>

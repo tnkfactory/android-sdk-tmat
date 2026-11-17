@@ -1087,7 +1087,7 @@
       "kind": "StringLiteral",
       "offset": 168,
       "length": 7,
-      "value": "\"1.0.0\""
+      "value": "\"6.0.0\""
     },
     {
       "filePath": "\/Users\/hanago\/IdeaProjects\/tnk-rwd\/tnk-rwd-tmat-ios\/Sources\/TnkTmatSdk\/Constants.swift",
